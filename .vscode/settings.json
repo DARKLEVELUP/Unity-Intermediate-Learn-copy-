@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Unity-Intermediate-Learn.sln"
+    "dotnet.defaultSolution": "Unity-Intermediate-Learn-copy-.sln"
 }
