@@ -1,18 +1,22 @@
+using UnityEditor.EditorTools;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Singleton<PlayerController>
 {
     //TODO: Attributes
+    [Header("Components")]
+    [SerializeField] public Rigidbody _rigidbody;
     public Animator _animator;
-    public float _walkSpeed = 1f;
+    [Range(0.1f, 5f), Tooltip("Walking speed")]public float _walkSpeed = 1f;
     public float _runSpeed = 2f;
+    [Space(10)]
     public float _jumpForce = 10f;
-    public Rigidbody _rigidbody;
+    
 
-    private Vector2 _movementInput;
-    private float _speed;
-    private bool _isRunning = false;
+    [SerializeField] private Vector2 _movementInput;
+    [SerializeField] private float _speed;
+    [SerializeField] private bool _isRunning = false;
 
     #region Input System
     private InputSystem_Actions _input;
@@ -72,6 +76,14 @@ public class PlayerController : MonoBehaviour
         if (direction != Vector3.zero)
         {
             _animator.transform.forward = direction;
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.TryGetComponent<Coin>(out Coin coin))
+        {
+            coin.Collect();
         }
     }
 }
