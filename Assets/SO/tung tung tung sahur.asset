@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: tung tung tung sahur
   m_EditorClassIdentifier: 
   Name: tung tung tung sahur
-  Description: tung tung tung sahurtung tung tung sahurtung tung tung sahurtung tung
-    tung sahurtung tung tung sahurtung tung tung sahurtung tung tung sahurtung tung
-    tung sahur
+  Description: tung tung tung sahur
   ElementalType: 0
   CharacterImage: {fileID: -1855763772, guid: 720dc1cebbf09b4469c871171dd088e2, type: 3}
   Cost: 4

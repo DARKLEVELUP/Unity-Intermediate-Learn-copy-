@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IQ
   m_EditorClassIdentifier: 
   Name: IQ
-  Description: 
+  Description: 49
   ElementalType: 2
   CharacterImage: {fileID: -1627723712, guid: cdbe6c6bfd11cc946a2f78c8d46e91ff, type: 3}
   Cost: 2

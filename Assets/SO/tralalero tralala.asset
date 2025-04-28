@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: tralalero tralala
   m_EditorClassIdentifier: 
   Name: tralalero tralala
-  Description: 
+  Description: Shark
   ElementalType: 1
   CharacterImage: {fileID: -1174097131, guid: 1597b3e73cb898e49b3bb83260c8a576, type: 3}
   Cost: 3

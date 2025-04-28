@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb14a49882858d4ba5174129c9841bf, type: 3}
   m_Name: crocodilo bombardino
   m_EditorClassIdentifier: 
-  Name: crocodilo bombardino
-  Description: 
+  Name: Crocodilo Bombardino
+  Description: Crocodilo Bombardino
   ElementalType: 0
   CharacterImage: {fileID: -1699661202, guid: eeaeaf9c191b26e4d86096955571a8de, type: 3}
   Cost: 2
