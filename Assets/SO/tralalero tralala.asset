@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb14a49882858d4ba5174129c9841bf, type: 3}
+  m_Name: tralalero tralala
+  m_EditorClassIdentifier: 
+  Name: tralalero tralala
+  Description: 
+  ElementalType: 1
+  CharacterImage: {fileID: -1174097131, guid: 1597b3e73cb898e49b3bb83260c8a576, type: 3}
+  Cost: 3
+  Health: 15
+  ATK: 6
