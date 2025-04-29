@@ -8,7 +8,8 @@ public class State
     public enum STATE
     {
         IDLE,
-        PATROL
+        PATROL,
+        JUMP
     }
     public enum EVENT
     {
@@ -22,6 +23,7 @@ public class State
 
     protected Enemy Me;
     protected NavMeshAgent Agent;
+
 
     public State(Enemy character, NavMeshAgent agent)
     {

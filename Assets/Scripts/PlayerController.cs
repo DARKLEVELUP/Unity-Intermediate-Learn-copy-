@@ -12,6 +12,7 @@ public class PlayerController : Singleton<PlayerController>
     public float _runSpeed = 2f;
     [Space(10)]
     public float _jumpForce = 10f;
+    // Removed redundant Instance field as it hides the inherited property.
     
 
     [SerializeField] private Vector2 _movementInput;
@@ -26,6 +27,7 @@ public class PlayerController : Singleton<PlayerController>
         _input = new InputSystem_Actions();
 
         _speed = _walkSpeed;
+        // The inherited Instance property from Singleton<T> already handles the singleton behavior.
     }
 
     void OnEnable()
@@ -89,10 +91,11 @@ public class PlayerController : Singleton<PlayerController>
         {
             items.Collect();
         }
-
-
+        
 
     }
+
+    
 
 
 

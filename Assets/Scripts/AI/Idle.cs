@@ -16,9 +16,9 @@ public class Idle : State
     public override void Update()
     {
         base.Update();
-        if(Me._isPlayerInView)
-        {
-            NextState = new Patrol(Me, Agent); // Transition to Patrol state if player is in view
+        if (Me._isPlayerInView)
+        {            
+            NextState = new Patrol(Me, Agent); // Transition to Patrol state
             Stage = EVENT.EXIT;
         }
     }

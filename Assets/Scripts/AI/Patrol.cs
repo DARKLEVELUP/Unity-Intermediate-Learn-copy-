@@ -16,10 +16,10 @@ public class Patrol : State
     public override void Update()
     {
         base.Update();
-        Agent.SetDestination(PlayerController.Instance.transform.position); // Set the destination to the patrol point
-        if (!Me._isPlayerInView)
-        {            
-            NextState = new Idle(Me, Agent); // Transition to Idle state if player is not in view
+        Agent.SetDestination(PlayerController.Instance.transform.position);
+        if (Me._isPlayerInView && Me.ShouldJump()) // Hypothetical condition for jumping
+        {
+            NextState = new Jump(Me, Agent, new Idle(Me, Agent)); // Jump and then transition to Idle
             Stage = EVENT.EXIT;
         }
     }
