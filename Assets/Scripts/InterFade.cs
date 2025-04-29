@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+using NaughtyAttributes;
 public class InterFade : MonoBehaviour
 {
     [SerializeField] private CanvasGroup _FadeCanvasGroup;
@@ -9,6 +9,7 @@ public class InterFade : MonoBehaviour
     private bool _isShown;
 
     [ContextMenu("Toggle UI")]
+    [Button]
     public void ToggleUI()
     {
         _isShown = !_isShown;
